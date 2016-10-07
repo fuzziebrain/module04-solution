@@ -1,5 +1,13 @@
-<ul>
-  <li ng-repeat="item in $ctrl.items">
-    {{ item.name }}
-  </li>
-</ul>
+<div class='md-padding' layout="column" layout-wrap>
+  <md-card ng-repeat="item in $ctrl.items">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">{{ item.name }}</span>
+        <span class="md-subhead">{{ item.description }}</span>
+      </md-card-title-text>
+    </md-card-title>
+  </md-card>
+</div>
+<div class='md-padding' layout="column" layout-wrap>
+  <md-button class="md-raised md-accent" ui-sref="categories"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back</md-button>
+</div>
