@@ -1,10 +1,10 @@
 (
   function () {
     'use strict';
-    angular.module('MenuApp', ['ngMaterial'])
+    angular.module('MenuApp', ['ngMaterial', 'ui.router'])
       .config(function ($mdThemingProvider, $mdIconProvider) {
         $mdThemingProvider.theme('mytheme').primaryPalette('deep-orange').accentPalette(
-          'cyan');
+          'blue');
       });
   }
 )();
